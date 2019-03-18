@@ -46,7 +46,9 @@
       <div class="mole"></div>
     </div>  
   </div>
-
+  <div id="endScreen">
+    <!--fill in the end screen-->
+  </div>
 <script>
 
 
@@ -118,7 +120,8 @@
     document.getElementById('TimerDisplay').innerHTML='00:'+sec;
     sec--;
     if (sec < 0) {
-    clearInterval(timer);
+      $(".endScreen").css("visibility": "visible;");
+      $(".game").css("visibility": "hidden;");
     }
     
     }, 1000);
