@@ -81,7 +81,7 @@
     return hole;
   }
   function peep() {
-  var imgs = ["yes.png", "Final Hare.png"];
+  var imgs = ["Final Bear.png", "Final Hare.png"];
   var i = Math.floor(Math.random() * imgs.length);
   var raccoon = document.getElementById('raccoon.png');
 
@@ -120,8 +120,9 @@
     document.getElementById('TimerDisplay').innerHTML='00:'+sec;
     sec--;
     if (sec < 0) {
-      $(".endScreen").css({"visibility": "visible;"});
-      $(".game").css({"visibility": "hidden;"});
+		clearInterval(timer);
+		$(".endScreen").css({"visibility": "visible;"});
+		$(".game").css({"visibility": "hidden;"});
     }
     
     }, 1000);
