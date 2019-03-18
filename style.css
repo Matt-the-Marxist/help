@@ -1,4 +1,3 @@
-
 html {
   box-sizing: border-box;
   font-size: 10px;
@@ -93,3 +92,4 @@ border-radius: 1rem;
 
 .hole.up .mole {
   top: 0;
+}
